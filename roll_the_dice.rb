@@ -10,7 +10,11 @@ end
 puts 'Сколько кубиков кидаем?'
 number = gets.to_i
 
+sum = 0
 number.times do
   show_roll
-  puts rand(1..6)
+  dice = rand(1..6)
+  puts dice
+  sum += dice
 end
+puts "сумма #{sum}"
